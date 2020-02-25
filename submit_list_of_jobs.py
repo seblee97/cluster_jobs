@@ -5,7 +5,7 @@ import subprocess
 
 argparser = argparse.ArgumentParser()
 
-argparser.add_argument("-main_path", help="path to main file", type=str)
+# argparser.add_argument("-main_path", help="path to main file", type=str)
 argparser.add_argument("-list_path", help="path to file containing list of jobs", type=str)
 argparser.add_argument("-job_script_path", help="path to skeleton file for job instructions", type=str)
 
@@ -25,5 +25,5 @@ for job in list_of_jobs:
     print(job_file_copy)
     copyfile(args.job_script_path, job_file_copy)
     with open(job_file_copy, 'a') as file:
-        file.write("python {} {}".format(args.main_path, job))
+        file.write(job)
         subprocess.call("qsub -P saxe.prjc -q long.qc job_copy.sh", shell=True)
