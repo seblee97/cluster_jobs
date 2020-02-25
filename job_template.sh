@@ -38,5 +38,3 @@ echo "------------------------------------------------"
 
 source /well/saxe/users/rfl568/Envs/cata/bin/activate
 cd /well/saxe/users/rfl568/repos/student_teacher_cont/experiments/
-
-python main.py
