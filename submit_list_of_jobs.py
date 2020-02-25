@@ -26,4 +26,4 @@ for job in list_of_jobs:
     copyfile(args.job_script_path, job_file_copy)
     with open(job_file_copy, 'a') as file:
         file.write(job)
-        subprocess.call("qsub -P saxe.prjc -q long.qc job_copy.sh", shell=True)
+    subprocess.call("qsub -P saxe.prjc -q long.qc job_copy.sh", shell=True)
