@@ -1,17 +1,17 @@
-python main.py -config base_config.yaml --ac additional_configs/ --en regression_relu_relu --lty regression --snl relu --tnl '[relu, relu]' --lr 0.2 --lf mse --tc overlapping --inp_s iid_gaussian --nt 2 --fp 5000
-python main.py -config base_config.yaml --ac additional_configs/ --en clssification_relu_relu --lty classification --snl relu --tnl '[relu, relu]' --lr 0.2 --lf nll --tc overlapping --inp_s iid_gaussian --nt 2 --fp 5000
-python main.py -config base_config.yaml --ac additional_configs/ --en mnist_regression_relu_relu --lty regression --snl relu --tnl '[relu, relu]' --lr 0.2 --lf mse --tc overlapping --inp_s mnist --nt 2 --fp 5000
-python main.py -config base_config.yaml --ac additional_configs/ --en mnist_classification_relu_relu --lty classification --snl relu --tnl '[relu, relu]' --lr 0.2 --lf nll --tc overlapping --inp_s mnist --nt 2 --fp 5000
+python main.py -config base_config.yaml --ac configs/ --en regression_relu_relu --lty regression --snl relu --tnl '[relu, relu]' --lr 0.2 --lf mse --tc overlapping --inp_s iid_gaussian --nt 2 --fp 5000
+python main.py -config base_config.yaml --ac configs/ --en clssification_relu_relu --lty classification --snl relu --tnl '[relu, relu]' --lr 0.2 --lf nll --tc overlapping --inp_s iid_gaussian --nt 2 --fp 5000
+python main.py -config base_config.yaml --ac configs/ --en mnist_regression_relu_relu --lty regression --snl relu --tnl '[relu, relu]' --lr 0.2 --lf mse --tc overlapping --inp_s mnist --nt 2 --fp 5000
+python main.py -config base_config.yaml --ac configs/ --en mnist_classification_relu_relu --lty classification --snl relu --tnl '[relu, relu]' --lr 0.2 --lf nll --tc overlapping --inp_s mnist --nt 2 --fp 5000
 
-python main.py -config base_config.yaml --ac additional_configs/ --en regression_relu_sigmoid --lty regression --snl relu --tnl '[sigmoid, sigmoid]' --lr 0.2 --lf mse --tc overlapping --inp_s iid_gaussian --nt 2 --fp 5000
-python main.py -config base_config.yaml --ac additional_configs/ --en clssification_relu_sigmoid --lty classification --snl relu --tnl '[sigmoid, sigmoid]' --lr 0.2 --lf nll --tc overlapping --inp_s iid_gaussian --nt 2 --fp 5000
-python main.py -config base_config.yaml --ac additional_configs/ --en mnist_regression_relu_sigmoid --lty regression --snl relu --tnl '[sigmoid, sigmoid]' --lr 0.2 --lf mse --tc overlapping --inp_s mnist --nt 2 --fp 5000
-python main.py -config base_config.yaml --ac additional_configs/ --en mnist_classification_relu_sigmoid --lty classification --snl relu --tnl '[sigmoid, sigmoid]' --lr 0.2 --lf nll --tc overlapping --inp_s mnist --nt 2 --fp 5000
+python main.py -config base_config.yaml --ac configs/ --en regression_relu_sigmoid --lty regression --snl relu --tnl '[sigmoid, sigmoid]' --lr 0.2 --lf mse --tc overlapping --inp_s iid_gaussian --nt 2 --fp 5000
+python main.py -config base_config.yaml --ac configs/ --en clssification_relu_sigmoid --lty classification --snl relu --tnl '[sigmoid, sigmoid]' --lr 0.2 --lf nll --tc overlapping --inp_s iid_gaussian --nt 2 --fp 5000
+python main.py -config base_config.yaml --ac configs/ --en mnist_regression_relu_sigmoid --lty regression --snl relu --tnl '[sigmoid, sigmoid]' --lr 0.2 --lf mse --tc overlapping --inp_s mnist --nt 2 --fp 5000
+python main.py -config base_config.yaml --ac configs/ --en mnist_classification_relu_sigmoid --lty classification --snl relu --tnl '[sigmoid, sigmoid]' --lr 0.2 --lf nll --tc overlapping --inp_s mnist --nt 2 --fp 5000
 
-python main.py -config base_config.yaml --ac additional_configs/ --en regression_sigmoid_relu --lty regression --snl sigmoid --tnl '[relu, relu]' --lr 0.2 --lf mse --tc overlapping --inp_s iid_gaussian --nt 2 --fp 5000
-python main.py -config base_config.yaml --ac additional_configs/ --en clssification_sigmoid_relu --lty classification --snl sigmoid --tnl '[relu, relu]' --lr 0.2 --lf nll --tc overlapping --inp_s iid_gaussian --nt 2 --fp 5000
-python main.py -config base_config.yaml --ac additional_configs/ --en mnist_regression_sigmoid_relu --lty regression --snl sigmoid --tnl '[relu, relu]' --lr 0.2 --lf mse --tc overlapping --inp_s mnist --nt 2 --fp 5000
-python main.py -config base_config.yaml --ac additional_configs/ --en mnist_classification_sigmoid_relu --lty classification --snl sigmoid --tnl '[relu, relu]' --lr 0.2 --lf nll --tc overlapping --inp_s mnist --nt 2 --fp 5000
+python main.py -config base_config.yaml --ac configs/ --en regression_sigmoid_relu --lty regression --snl sigmoid --tnl '[relu, relu]' --lr 0.2 --lf mse --tc overlapping --inp_s iid_gaussian --nt 2 --fp 5000
+python main.py -config base_config.yaml --ac configs/ --en clssification_sigmoid_relu --lty classification --snl sigmoid --tnl '[relu, relu]' --lr 0.2 --lf nll --tc overlapping --inp_s iid_gaussian --nt 2 --fp 5000
+python main.py -config base_config.yaml --ac configs/ --en mnist_regression_sigmoid_relu --lty regression --snl sigmoid --tnl '[relu, relu]' --lr 0.2 --lf mse --tc overlapping --inp_s mnist --nt 2 --fp 5000
+python main.py -config base_config.yaml --ac configs/ --en mnist_classification_sigmoid_relu --lty classification --snl sigmoid --tnl '[relu, relu]' --lr 0.2 --lf nll --tc overlapping --inp_s mnist --nt 2 --fp 5000
 
-python main.py -config base_config.yaml --ac additional_configs/ --en pure_mnist_classification_relu --lty not_applicable --snl relu --lr 0.2 --lf cross_entropy --tc mnist --inp_s iid_gaussian --nt 2 --fp 5000
-python main.py -config base_config.yaml --ac additional_configs/ --en pure_mnist_classification_sigmoid --lty not_applicable --snl sigmoid --lr 0.2 --lf cross_entropy --tc mnist --inp_s iid_gaussian --nt 2 --fp 5000
+python main.py -config base_config.yaml --ac configs/ --en pure_mnist_classification_relu --lty not_applicable --snl relu --lr 0.2 --lf cross_entropy --tc mnist --inp_s iid_gaussian --nt 2 --fp 5000
+python main.py -config base_config.yaml --ac configs/ --en pure_mnist_classification_sigmoid --lty not_applicable --snl sigmoid --lr 0.2 --lf cross_entropy --tc mnist --inp_s iid_gaussian --nt 2 --fp 5000
